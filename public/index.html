@@ -20,19 +20,39 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+
+    <script type="text/javascript" src="../build/static/"></script>
+
+    <style>
+      body {
+        background: #aaa;
+      }
+
+      .intro {
+        background: #333;
+        color: #FFF;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        margin-bottom: 30px;
+        padding: 30px;
+        text-align: center;
+      }
+
+      .chart-wrapper {
+        margin: 0 auto;
+        max-width: 550px;
+      }
+    </style>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <div class="intro">
+      This is an example of a regular page with only a single react component, bound to #chart
+    </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div class="chart-wrapper">
+      <div id="chart"></div>
+    </div>
+
   </body>
 </html>
